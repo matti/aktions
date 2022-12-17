@@ -1,8 +1,10 @@
 on:
   release:
+    types:
+      - released
 
 jobs:
-  wat:
+  released:
     runs-on: ubuntu-22.04
     steps:
       - run: env | sort
