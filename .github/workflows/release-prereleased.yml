@@ -13,7 +13,7 @@ jobs:
     steps:
       - run: env | sort
       - run: mkdir dist
-      - run: touch dist/${{ matrix.component }}-${{ matrix.runtime }}.zip
+      - run: echo "lol" > dist/${{ matrix.component }}-${{ matrix.runtime }}.zip
       - uses: softprops/action-gh-release@v1
         with:
           files: dist/*
