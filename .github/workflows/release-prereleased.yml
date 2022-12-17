@@ -1,8 +1,10 @@
 on:
   release:
+    types:
+      - prereleased
 
 jobs:
-  release:
+  prereleased:
     runs-on: ubuntu-22.04
     steps:
       - run: env
