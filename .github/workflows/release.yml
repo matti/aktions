@@ -1,0 +1,8 @@
+on:
+  release:
+
+jobs:
+  release:
+    runs-on: ubuntu-22.04
+    steps:
+      - run: env
